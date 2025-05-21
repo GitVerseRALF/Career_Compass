@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f3f3f3;
+            font-family:"Roboto",sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 300px;
+            background-color: white;
+            padding: 10px;
+            background: linear-gradient(to bottom, rgb(255, 196, 0), rgba(255, 255, 255, 0.664));
+        }
+
+        #main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background: linear-gradient(to bottom, rgb(255, 255, 85), white);
+        }
+
+        #recommendation {
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: auto;
+        }
+
+        #recommendationn {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto); 
+            grid-gap: 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: auto;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            align-items: center;
+            max-width: auto;
+        }
+
+        #recommendationn div {
+            border: 1px solid #ddd;
+            padding: 10px;
+            min-width: 400px;
+            margin: 5px 5px;
+            text-align: center;
+        }
+
+        #recommendationn a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #recommendationn a:hover {
+            text-decoration: underline;
+        }
+
+        #messages {
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            overflow: auto;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        #History ul {
+            margin-left: -20px;
+        }
+
+        #History li {
+            padding-top: 30px;
+        }
+
+        #input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            /* margin-top: auto; */
+            min-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #input-field {
+            flex: 1;
+            resize: none;
+        }
+
+        #send-btn {
+            margin-left: 10px;
+        }
+
+        #praise {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            position: fixed;
+            right: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 40px;
+            right: 0;
+            margin-right: 8px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        pre {
+            font-size: 15px;
+            /* margin-left: -900px; */
+            background-color: #add8e6; /* Light blue background */
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 860px;
+            margin-left: auto; /* Align to the right */
+        }
+
+        .text_msg p {
+  background-color: #e0e0e0; /* Light gray background */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  max-width: 250px;
+}
+
+        @media screen and (max-width: 1068px) {
+            .container {
+                flex-direction: column;
+            }
+
+            #sidebar, #main {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar">
+            <h3 style="text-align: center;">Chat History</h3>
+            <div id="messages">
+                <div id="History">
+                    <ul>
+                        <li>Wome Bu yi yang</li>
+                        <li>We're Different</li>
+                        <li>Wome booyah</li>
+                        <li>Feng seli tengliiii</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="recommendation">AI Recommendation: General Chatbot Usage</div>
+            <div id="user-chat" class="mb-3">User: create an AI chat interface...</div>
+            <div id="ai-chat"></div>
+        </div>
+
+        <div id="main">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="/home.html">Home</a>
+                    <a href="/profile.html">User Profile</a>
+                    <a href="#" class="button new-chat">
+                        <span>Create a New Chat</span>
+                    </a>
+                </div>
+            </div>
+            <Div id="praise">
+                <h2>Career Compass here's to help</h2>
+                <div class="text_msg" style="margin-top:  200px;">
+                    <p style="margin-left: 00px;">Hi there, how can i help you?</p>
+                    <p style="margin-top: 100px; margin-left: 1430px;">How to improve my softskill?</p>
+                    <pre style="margin-top: 100px;margin-left: -00px;">Improving soft skills takes practice and dedication. 
+Start by enhancing your communication abilities, being open to feedback, and engaging in active listening. 
+Additionally, work on your teamwork, problem-solving, and adaptability.</pre>
+                    <pre style="margin-top: 20px; margin-right:  700px;">If you're looking for more structured guidance, consider taking online courses, attending workshops,
+or finding a mentor who can help you develop these skills further.</pre>
+                </div>
+            </Div>
+            
+            <div id="recommendationn" class="mb-3">
+                <div><a href="#">Web Development</a></div> 
+                <div><a href="#">HTML</a></div>
+                <div><a href="#">CSS</a></div>
+                <div><a href="#">JavaScript</a></div>
+            </div>
+
+            <div id="input-container">
+                <textarea id="input-field" placeholder="Type a message..."></textarea>
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('a.new-chat').addEventListener('click', function(event) {
+                event.preventDefault();
+                location.reload(true);
+            });
+
+            var recommendationLinks = document.querySelectorAll('#recommendationn a');
+
+            recommendationLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); 
+
+                    var text = this.textContent;
+
+                    document.getElementById('input-field').value = text;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

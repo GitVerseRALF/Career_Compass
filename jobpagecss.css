@@ -1,0 +1,317 @@
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jobs-list-container {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .jobs-list-container h2 {
+    font-size: 30px;
+    border-left: 4px solid #340844;
+    padding-left: 20px;
+  }
+  
+  .jobs-list-container .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .jobs-list-container .jobs img {
+    width: 50px;
+  }
+  
+  .jobs-list-container .job {
+    background-color: white;
+    box-shadow: 10px 10px 10px -5px rgb(226, 141, 45);
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 400ms ease;
+  }
+  
+  .jobs-list-container .job:hover {
+    transform: scale(1.03);
+  }
+
+  .jobs-list-container .open-positions {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    color: red;
+    font-weight: bold;
+  }
+  
+  .jobs-list-container .job-title {
+    font-size: 24px;
+    padding: 15px 0;
+    margin: 0px;
+    color: #340844;
+    font-weight: bold;
+  }
+
+  .jobs-list-container .job-subtitle {
+    font-size: 15px;
+    color: #340844; /* You can adjust the color as needed */
+    margin-top: -17px;
+  }
+  
+  
+  .jobs-list-container .details {
+    padding: 0px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #340844;
+    line-height: 1.8;
+    flex: 1;
+  }
+
+  .jobs-list-container .job-salary {
+    font-size: 14px;
+    color: green;
+    margin-top: 0px;
+    font-weight: bold;
+  }
+
+  .jobs-list-container .job-location {
+    padding: 0px;
+    font-size: 14px;
+    color: blue;
+    margin-top: -15px;
+    margin-bottom: -10px;
+    font-weight: bold;
+  }
+  
+  .jobs-list-container .details-btn {
+    text-decoration: none;
+    border: 1px solid #340844;
+    color: #340844;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 400ms ease;
+  }
+  
+  .jobs-list-container .details-btn:hover {
+    background: orangered;
+    color: #fff;
+  }
+  
+  .jobs-list-container .job-search {
+    width: 100%;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 940px) {
+    .jobs-list-container .jobs {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .jobs-list-container .jobs {
+      grid-template-columns: 1fr;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-top: -9px;
+    background-color: rgba(255, 166, 0, 0.514);
+    backdrop-filter: blur(10px);
+}
+
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+ol, ul {
+    padding-left: 0;
+}
+
+#navList {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navList li {
+    padding: 5px;
+    margin-left: 25px;
+}
+
+#navList li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+#navList li a:hover {
+    color: #340844;
+}
+
+#icon a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 52px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 90px;
+}
+
+#loginSection {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+#loginSection button {
+    border-radius: 25px;
+}
+
+#loginSection button:nth-child(1) {
+    background-color: #340844;
+    border: none;
+    padding: 12px 0;
+}   
+
+#loginSection button:nth-child(1):hover {
+    background-color: #24062e;
+}
+
+#loginSection button:nth-child(2) {
+    background-color: #EBE3D5;
+    border: #22092C solid 2px;
+    padding: 10px 0;
+}
+
+#loginSection button:nth-child(2):hover {
+    background-color: #fff;
+} 
+
+#loginSection button:nth-child(1) a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 22px 12px 22px;
+}
+
+#loginSection button:nth-child(2) a {
+    text-decoration: none;
+    color: #22092C;
+    padding: 10px 20px 10px 20px;
+}
+
+@media only screen and (max-width: 957px)  {
+  #icon a {
+    display: none;
+}
+}
+footer{
+  background-color: rgb(253, 61, 61);
+  font-family:  'Libre Caslon Text', sans-serif;
+}
+.footerContainer{
+  width: 100%;
+  padding: 20px 20px 0px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  0px;
+  margin: 12px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: #340844;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 15px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 15px;
+  text-decoration: none;
+  padding: 40px;
+  font-size: 1em;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+ color: #340844;
+}
+.footerBottom{
+  background-color: #2f043f;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+.designer{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}

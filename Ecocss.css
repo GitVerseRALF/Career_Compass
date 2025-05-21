@@ -1,0 +1,120 @@
+body {
+    background-color: antiquewhite;
+}
+
+/* Define some CSS variables for the colors */
+:root {
+    --bg-color: #F0EDEE;
+    --text-color: #333333;
+    --button-color: #F0A500;
+    --button-hover-color: #F0C800;
+  }
+
+  /* Style the header */
+  .header {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  /* Style the navbar */
+  .navbar {
+    overflow: hidden;
+    background-color: var(--bg-color);
+  }
+
+  /* Style the navbar links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Style the right-aligned link */
+  .navbar a.right {
+    float: right;
+  }
+
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+  }
+
+  /* Style the content */
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Style the user image */
+  .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  /* Style the input fields */
+  input[type=text], input[type=password] {
+    width: 80%;
+    height: 40px;
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+  }
+
+  /* Style the labels */
+  label {
+    display: inline-block;
+    color: var(--text-color);
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  /* Style the paragraph */
+  p {
+    color: var(--text-color);
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Style the buttons */
+  button {
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+    display: block; /* Added this line */
+    margin: 10px auto; /* Updated this line */
+}   
+
+  /* Style the Google button */
+  .google {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  /* Change the appearance of buttons on hover */
+  button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+  }

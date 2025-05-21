@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Ecojs.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(Assets/CityViews.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            width: 400px;
+            /* background: transparent; */
+            border: 2px solid rgb(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            color: #333;
+            /* border-radius: 15px; */
+            padding: 30px 40px;
+        }
+
+        .container h1{
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .container .input_box {
+            position: relative;
+            width: 100%;
+            height: 55px;
+            /* background: olivedrab; */
+            margin: 30px, 0;
+            padding-top: 10px;
+        }
+
+        .input_box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+            font-size: 18px;
+            color: #333;
+            padding: 20px, 40px 20px, 20px;
+            
+            /* margin-top: 5px; */
+        }
+
+        .input_box input::placeholder {
+            color: #000000;
+            padding-left: 10px;
+        }
+
+        .input_box i {
+            position: absolute;
+            right: 20px;
+            top: 60%;
+            transform: translateY(-50%);
+            font-size: 25px;
+        }
+
+        .container .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: -15px, 0, 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            /* border-radius: 10px; */
+        }
+
+        .remember-forgot label input{
+            accent-color: #333;
+            margin-right: 3px;
+        }
+
+        .remember-forgot a{
+            color: #333;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+
+        .container .btn {
+            width: 100%;
+            height: 45px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 35px;
+            box-shadow: 0 0 10px rgba(0, 0, 0 .1);
+            cursor: pointer;
+            font-size: 19px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            transition: 0.3s;
+            background: #dad7d7;
+            z-index: 1;
+        }
+        
+        .btn a{
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .container .register-link {
+            font-size: 15px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+
+        .register-link p a{
+            color:#333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .register-link p :hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input_box">
+                <input class="user" type="text" placeholder="Username" required>
+                <i class='bx bxs-user-circle'></i>
+            </div>
+            <div class="input_box">
+                <input class="pass" type="password" placeholder="Password" required>
+                <i class='bx bx-lock' ></i>
+            </div>
+
+            <div class="remember-forgot">
+            <label><input type="checkbox">Remember me</label>
+            <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn"><a id="link" href="home.html">Login</a></button>
+
+            <div class="register-link">
+                <p>Don't have an account yet? <a href="signup.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+  height: 100%;
+}
+
+.wrap{
+background-image: url(Assets/Abstract\ background.jpg);
+  background-size: cover;
+  min-height: 100%;
+  
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* width: 7000px; */
+  /* max-width: 375px; */
+  margin-top: -92px;
+  
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 15px;
+}
+
+.container div h5 {
+  font-size: 20px;
+}
+.sidebar{
+  height: 100%;
+  width: 180px;
+  position: absolute;
+  background-color: #fff;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.menu{
+color: #22092C;
+font-weight: 800px;
+text-align: right;
+padding: 10px 0;
+padding-right: 30px;
+pointer-events: none;
+}
+
+.navlist li{
+  list-style: none;
+}
+/* 
+.navlist li a{
+  color: #340844;
+  font-weight: 500px;
+  padding: 5px 0;
+  display: block;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition: 0.2s ease-out;
+  -ms-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+} */
+
+.wrapper{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  margin-top: 200px;
+}
+
+/* .card{
+  width: 30rem;
+} */
+
+nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #D99767; */
+  height: 60px;
+}
+
+/* .card-body:nth-of-type(2) {
+padding-top: 70px;
+} */
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+} 
+
+ol, ul {
+  padding-left: 0;
+}
+
+/* #navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navList li {
+  padding: 5px;
+  margin-left: 25px;
+}
+
+#navList li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+#navList li a:hover {
+  color: #340844;
+} */
+
+#icon{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 660px;
+}
+
+#icon a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 52px;
+  align-items: center;
+}
+
+#loginSection {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+#loginSection button {
+  border-radius: 25px;
+}
+
+#loginSection button:nth-child(1) {
+  background-color: #340844;
+  border: none;
+  padding: 12px 0;
+}   
+
+#loginSection button:nth-child(1):hover {
+  background-color: #24062e;
+}
+
+#loginSection button:nth-child(2) {
+  background-color: #EBE3D5;
+  border: #22092C solid 2px;
+  padding: 10px 0;
+}
+
+#loginSection button:nth-child(2):hover {
+  background-color: #fff;
+} 
+
+#loginSection button:nth-child(1) a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 22px 12px 22px;
+}
+
+#loginSection button:nth-child(2) a {
+  text-decoration: none;
+  color: #22092C;
+  padding: 10px 20px 10px 20px;
+}
+
+.questionnaire{
+color: white;
+text-decoration: none;
+}
+
+.question-button:hover{
+background-color: rgb(248, 188, 148);
+transition: 0.4s;
+text-decoration: none;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer{
+  background-color: rgb(253, 61, 61);
+  font-family:  'Libre Caslon Text', sans-serif;
+}
+.footerContainer{
+  width: 100%;
+  padding: 20px 20px 0px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  0px;
+  margin: 12px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: #340844;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 15px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 15px;
+  text-decoration: none;
+  padding: 40px;
+  font-size: 1em;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+ color: #340844;
+}
+.footerBottom{
+  background-color: #2f043f;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+.designer{
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+.sidebar {
+  width: 250px; /* Set the width of the sidebar */
+  background-color: rgb(216, 140, 216); /* Set the background color */
+  padding: 20px; /* Add some padding */
+}
+
+.sidebar-header {
+  text-align: center; /* Center align the header */
+  margin-bottom: 20px; /* Add some space below the header */
+}
+
+.sidebar-nav {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+}
+
+.sidebar-nav .nav-item {
+  margin-bottom: 10px; /* Add space between each item */
+}
+
+.sidebar-nav .nav-link {
+  color: white; /* Set the text color */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Make links block elements */
+}
+
+.sidebar-nav .nav-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+@media only screen and (max-width: 1035px) {
+#icon a {
+  display: none;
+}
+}
+
+@media (max-height: 555px){
+  .card{
+    width: 10rem;
+    margin-top: 170px;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+#loginSection{
+  display: none;
+}
+}
+
+@media(max-height: 732px) {
+  .wrapper{
+    margin-top: 0;
+  }
+
+  .card{
+    width: 20rem;
+    margin-top: 100px;
+  }
+
+  .card:nth-of-type(1) .card-body {
+    margin-top: 50px;
+  }
+  
+}
+
+@media(min-height: 733px){
+  .card{
+    width: 30rem;
+  }
+}
